@@ -52,6 +52,16 @@ h4 {
     display: inline-block;
 }
 
+.row {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+}
+
 .row-table {
     display: table;
 }
@@ -122,11 +132,6 @@ header {
 #nav li {
     font-size: 14px;
     padding: 0;
-}
-
-.row {
-    --bs-gutter-x: 0;
-    --bs-gutter-y: 0;
 }
 
 .menu-item {
@@ -228,4 +233,39 @@ footer {
 
 .three-reasons-heading {
     margin-bottom: 15px;
+}
+
+/* -------------------------------- Personal Info */
+
+.personal-info-item {
+    margin-bottom: 20px;
+    display: block;
+    clear: both;
+}
+
+.personal-info-item .key,
+.personal-info-item .value {
+    padding-right: 8px;
+    display: inline-block;
+}
+
+.personal-info-item .key p,
+.personal-info-item .value p {
+    margin: 0;
+}
+
+.personal-info-item .key {
+    width: 30%;
+    margin-right: 21px;
+    padding-top: 2px;
+    vertical-align: top;
+}
+
+.personal-info-item .key p {
+    font-weight: 700;
+}
+
+.personal-info-item .value {
+    position: relative;
+    width: 60%;
 }
